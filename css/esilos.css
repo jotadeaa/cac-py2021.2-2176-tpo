@@ -4,6 +4,7 @@
 	--marfil:#F0F0F0;
 	--novedad:#8F1707;
 	--rosado:#E89494;
+	--radio:.25rem;
 }
 *{box-sizing:border-box}
 html,body{font-size:100%;font-family:Roboto,'Open Sans',Tahoma,Arial,sans-serif;color:var(--negro)}
@@ -32,16 +33,17 @@ footer{background:#64110D;padding:1rem 0}
 .grid-container{display:grid;gap:1rem}
 .grid-hero{grid-column:1/-1}
 .spaced{margin-block:1rem}
-.card,.boton{border-radius:.25rem;overflow:hidden}
+.card,.boton{border-radius:var(--radio);overflow:hidden}
 .card{border:1px solid var(--gris)}
 .card header h2{font-size:1rem;margin:1rem}
 .card-body{padding:0 1rem 1rem}
 .card-body p{margin:1rem 0;line-height:normal}
 .card img{width:100%}
 .boton{color:var(--marfil);background:var(--gris);border:0;padding:.5rem 1rem;cursor:pointer;display:inline-block}
+.novedades{border:2px solid var(--novedad);border-radius:var(--radio)}
 .novedades>.grid-container{display:grid;gap:0}
-.novedades>.grid-container>.grid-col{grid-template-columns:140px auto;padding:1rem 0 0}
-.novedades .grid-col.grid-hero{padding-bottom:1rem}
+.novedades>.grid-container>.grid-col{grid-template-columns:140px auto;padding:1rem}
+.novedades .grid-hero{background:#FC6}
 .novedades .grid-col:not(.grid-hero) h2{text-transform:uppercase}
 .novedades .grid-col img{width:140px;display:block}
 .novedades .grid-col h2{margin:0 0 1rem}
