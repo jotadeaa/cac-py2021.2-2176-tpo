@@ -78,9 +78,8 @@ footer{background:#64110D;padding:1rem 0}
 }
 @media (max-width:61em){
 	fieldset{padding-inline:1rem}
-	footer .grid-container{grid-template-columns:1fr 1fr}
-	.grid-container{padding-inline:1rem}
-	.novedades{margin-inline:1rem}
+	footer .grid-container{padding-inline:1rem;grid-template-columns:1fr 1fr}
+	.spaced{margin-inline:1rem}
 	.novedades>.grid-container{padding-inline:0}
 	.copy{margin-inline:1rem}
 }
