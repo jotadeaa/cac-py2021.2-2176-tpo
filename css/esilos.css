@@ -19,6 +19,7 @@ footer{background:#64110D;padding:1rem 0}
 .page-header{background:#000;background:linear-gradient(180deg,#000 0%,var(--negro) 40%,#EED020 100%)}
 .contenedor{max-width:60rem;margin:0 auto}
 .header-top{background:#FFF;padding:1.25rem;justify-content:space-between}
+.header-banner img{width:100%}
 .nav-menu{background:#404040}
 .nav-menu ul{display:flex}
 .nav-menu a,.header-banner img,.card img{display:block}
@@ -32,7 +33,7 @@ footer{background:#64110D;padding:1rem 0}
 .grid-container{display:grid;gap:1rem}
 .grid-hero{grid-column:1/-1}
 .spaced{margin-block:1rem}
-.card,.boton,.novedades{border-radius:.25rem}
+.rounded{border-radius:.25rem;overflow:hidden}
 .card{border:1px solid var(--gris)}
 .card header h2{font-size:1rem;margin:1rem}
 .card-body{padding:0 1rem 1rem}
