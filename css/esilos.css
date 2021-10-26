@@ -65,6 +65,7 @@ footer{background:#64110D;padding:1rem 0}
 .orientaciones h1,.orientaciones h2{margin-block:0}
 .orientaciones img{width:100%}
 .orientaciones ul{padding:0 0 0 1rem;margin:1rem 0}
+.text-danger{font-size:1.5rem;line-height:0;vertical-align:middle}
 @media (max-width:37.5em){
 	.header-top{flex-direction:column}
 	.header-top img{max-width:100%;margin-bottom:1rem}
