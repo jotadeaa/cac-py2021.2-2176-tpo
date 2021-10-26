@@ -58,6 +58,13 @@ footer{background:#64110D;padding:1rem 0}
 .fa-twitter-square{color:#1DA1F2}
 .fa-facebook-square{color:#3B5998}
 .fa-envelope{color:#FFF}
+.botonera{border:1px solid var(--negro);background:var(--negro);gap:1px}
+.botonera li{flex-grow:1}
+.botonera .boton{text-align:center;display:block}
+.botonera .boton-active{color:var(--negro);background:var(--amarillo)}
+.orientaciones h1,.orientaciones h2{margin-block:0}
+.orientaciones img{width:100%}
+.orientaciones ul{padding:0 0 0 1rem;margin:1rem 0}
 @media (max-width:37.5em){
 	.header-top{flex-direction:column}
 	.header-top img{max-width:100%;margin-bottom:1rem}
@@ -68,10 +75,15 @@ footer{background:#64110D;padding:1rem 0}
 	.novedades-header{flex-direction:column}
 	.novedades-header h1{align-self:start}
 	.novedades-header .update{align-self:end;margin-top:1em}
+	.orientaciones h2{display:none}
 }
 @media (min-width:37.5em){
 	.footer-menu ul li+li{border-top:1px dashed var(--rosado)}
 	.intro-top{grid-template-columns:1fr 1fr 1fr}
+	.orientaciones header{grid-column:1/-1;display:none}
+}
+@media (min-width:37.5em) and (max-width:61em){
+	.orientaciones{grid-template-columns:minmax(auto, 400px) minmax(50%, auto)}
 }
 @media (max-width:61em){
 	fieldset{padding-inline:1rem}
@@ -85,4 +97,6 @@ footer{background:#64110D;padding:1rem 0}
 	.novedades .grid-container{grid-template-columns:1fr 1fr}
 	.novedades .grid-col:nth-child(odd):not(.grid-hero){padding-left:1rem;border-left:1px solid var(--novedad)}
 	.novedades .grid-col:nth-child(even){padding-right:1rem;border-right:1px solid var(--novedad)}
+	.botonera li{flex-basis:16%}
+	.orientaciones{grid-template-columns:400px auto}
 }
