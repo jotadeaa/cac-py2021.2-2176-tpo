@@ -62,6 +62,7 @@ footer{background:#64110D;padding:1rem 0}
 .botonera li{flex-grow:1}
 .botonera .boton{font:unset;text-align:center;width:100%}
 .botonera .boton-active{color:var(--negro);background:var(--amarillo)}
+.botonera.animando .boton:not(.boton-active){cursor:wait;opacity:.5}
 .orientaciones h1,.orientaciones h2{margin-block:0}
 .orientaciones h2.animate__animated{font-size:1.25rem;margin:1em 0 0;animation-iteration-count:2;white-space:nowrap}
 .orientaciones .animate__animated:not(#incumbTitulo){animation-duration:2s}
