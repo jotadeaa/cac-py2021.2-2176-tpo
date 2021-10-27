@@ -26,7 +26,7 @@ footer{background:#64110D;padding:1rem 0}
 .nav-menu ul{display:flex}
 .nav-menu a{color:var(--marfil);padding:1rem 1.5rem}
 .nav-menu a.menu-active,.nav-menu a:hover{color:#434345}
-.nav-menu a.menu-active{background:#E3E3E5}
+.nav-menu a.menu-active{background:#E3E3E5;cursor:default}
 .nav-menu a:hover{background:var(--amarillo)}
 .lgcba{margin:.5rem 1rem}
 .address{font-size:.75rem;line-height:1rem;text-align:right}
@@ -61,7 +61,7 @@ footer{background:#64110D;padding:1rem 0}
 .botonera{border:1px solid var(--negro);background:var(--negro);gap:1px}
 .botonera li{flex-grow:1}
 .botonera .boton{font:unset;text-align:center;width:100%}
-.botonera .boton-active{color:var(--negro);background:var(--amarillo)}
+.botonera .boton-active{color:var(--negro);background:var(--amarillo);cursor:default}
 .botonera.animando .boton:not(.boton-active){cursor:wait;opacity:.5}
 .orientaciones h1,.orientaciones h2{margin-block:0}
 .orientaciones h2.animate__animated{font-size:1.25rem;margin:1em 0 0;animation-iteration-count:2;white-space:nowrap}

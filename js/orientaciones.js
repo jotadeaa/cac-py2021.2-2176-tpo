@@ -71,7 +71,7 @@ fetch('./orientaciones.json')
 	});
 for (const boton of document.querySelectorAll('.botonera .boton')) {
 	boton.addEventListener('click', () => {
-		if (animando) {
+		if (animando || boton == botonPrev) {
 			return;
 		}
 
