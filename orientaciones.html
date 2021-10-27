@@ -9,6 +9,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&amp;family=Open+Sans:ital,wght@0,400;0,700;1,400&amp;display=swap">
 	<link rel="stylesheet" href="./css/fa-all.min.css">
+	<link rel="stylesheet" href="./css/animate.min.css">
 	<link rel="stylesheet" href="./css/esilos.css">
 </head>
 <body>
@@ -41,32 +42,28 @@
 		<div class="contenedor">
 			<section class="spaced">
 				<ul class="nomarker flex-container botonera rounded">
-					<li><a data-orient="alimentos" class="boton">Alimentos</a></li>
-					<li><a data-orient="automotores" class="boton">Automotores</a></li>
-					<li><a data-orient="construcciones" class="boton">Construcciones</a></li>
-					<li><a data-orient="electricidad" class="boton">Electricidad</a></li>
-					<li><a data-orient="electronica" class="boton">Electrónica</a></li>
-					<li><a data-orient="graficas" class="boton">Gráficas</a></li>
-					<li><a data-orient="indumentaria" class="boton">Indumentaria</a></li>
-					<li><a data-orient="mecanica" class="boton">Mecánica</a></li>
-					<li><a data-orient="muebles" class="boton">Muebles</a></li>
-					<li><a data-orient="orfebreria" class="boton">Orfebrería</a></li>
-					<li><a data-orient="publicidad" class="boton">Publicidad</a></li>
+					<li><button type="button" data-orient="alimentos" class="boton">Alimentos</button></li>
+					<li><button type="button" data-orient="automotores" class="boton">Automotores</button></li>
+					<li><button type="button" data-orient="construcciones" class="boton">Construcciones</button></li>
+					<li><button type="button" data-orient="electricidad" class="boton">Electricidad</button></li>
+					<li><button type="button" data-orient="electronica" class="boton">Electrónica</button></li>
+					<li><button type="button" data-orient="graficas" class="boton">Gráficas</button></li>
+					<li><button type="button" data-orient="indumentaria" class="boton">Indumentaria</button></li>
+					<li><button type="button" data-orient="mecanica" class="boton">Mecánica</button></li>
+					<li><button type="button" data-orient="muebles" class="boton">Muebles</button></li>
+					<li><button type="button" data-orient="orfebreria" class="boton">Orfebrería</button></li>
+					<li><button type="button" data-orient="publicidad" class="boton">Publicidad</button></li>
 				</ul>
 			</section>
 			<section class="spaced grid-container orientaciones">
-				<header>
-					<h1 id="orientTitulo">
-						<i class="fas fa-arrow-alt-circle-up"></i>
-						Por favor seleccione una orientación
-						<i class="fas fa-arrow-alt-circle-up"></i>
-					</h1>
+				<header style="display:none">
+					<h1 id="orientTitulo" class="animate__animated"></h1>
 				</header>
-				<img src="./images/question-mark.webp" id="orientImagen" alt="?">
-				<div>
-					<h2>
+				<img src="./images/question-mark.webp" id="orientImagen" alt="?" class="animate__animated">
+				<div id="incumbWrappr" class="incumb-wrapper animate__animated">
+					<h2 id="incumbTitulo" class="animate__animated animate__bounce">
 						<i class="fas fa-arrow-alt-circle-up"></i>
-						Por favor seleccione una orientación
+						Por favor seleccione <span class="orienta-frase">una orientación</span>
 						<i class="fas fa-arrow-alt-circle-up"></i>
 					</h2>
 					<ul id="orientIncumb" style="display:none"></ul>
