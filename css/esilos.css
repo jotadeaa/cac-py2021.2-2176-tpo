@@ -111,8 +111,7 @@ footer{background:#64110D;padding:1rem 0}
 @media (min-width:61em){
 	footer .grid-container{grid-template-columns:repeat(4, 1fr)}
 	.novedades .grid-container{grid-template-columns:1fr 1fr}
-	.novedades .grid-col:nth-child(odd):not(.grid-hero){padding-left:1rem;border-left:1px solid var(--novedad)}
-	.novedades .grid-col:nth-child(even){padding-right:1rem;border-right:1px solid var(--novedad)}
+	.novedades .grid-col:nth-child(4n),.novedades .grid-col:nth-child(4n-1){background:var(--gris)}
 	.botonera li{flex-basis:16%}
 	.orientaciones{grid-template-columns:400px auto}
 }
