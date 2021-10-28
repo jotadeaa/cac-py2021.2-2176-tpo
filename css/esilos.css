@@ -43,7 +43,7 @@ footer{background:#64110D;padding:1rem 0}
 .novedades{border:2px solid var(--novedad)}
 .novedades>.grid-container{display:grid;gap:0}
 .novedades>.grid-container>.grid-col{padding:1rem}
-.novedades .grid-hero{background:#FC6;grid-column:1/-1}
+.novedades .grid-hero{background:#FC6;grid-column:span 2}
 .novedades .grid-col:not(.grid-hero) h2{text-transform:uppercase}
 .novedades .grid-col img{width:100%}
 .novedades .grid-col h2,.novedades .grid-col p{margin:0}
@@ -80,12 +80,12 @@ footer{background:#64110D;padding:1rem 0}
 	.header-banner{display:none}
 	.grid-container{grid-template-columns:1fr}
 	.novedades>.grid-container>.grid-col{grid-template-columns:100px auto}
-	.novedades .grid-col p{grid-column:1/-1}
+	.novedades .grid-col p{grid-column:span 2}
 	.novedades-header{flex-direction:column}
 	.novedades-header h1{align-self:start}
 	.novedades-header .update{align-self:end;margin-top:1em}
 	.orientaciones h2.animate__animated{text-align:center}
-	.incumb-wrapper{grid-row:1/-1}
+	.incumb-wrapper{grid-row:1}
 }
 @media (min-width:37.5em){
 	.footer-menu ul li+li{border-top:1px dashed var(--rosado)}
