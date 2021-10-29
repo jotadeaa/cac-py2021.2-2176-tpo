@@ -73,6 +73,7 @@ footer{background:#64110D;padding:1rem 0;margin:2rem 0 0}
 .text-danger{font-size:1.5rem;line-height:0;vertical-align:middle}
 iframe{display:none}
 @media (max-width:23em){
+	.nav-menu ul{flex-grow:1}
 	.nav-menu a{padding:.75rem}
 }
 @media (min-width:23em){
