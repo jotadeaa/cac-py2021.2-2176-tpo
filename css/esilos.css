@@ -25,7 +25,7 @@ footer{background:#64110D;padding:1rem 0;margin:2rem 0 0}
 .header-banner img,.card img{width:100%}
 .nav-menu{background:#404040}
 .nav-menu ul{display:flex}
-.nav-menu a{color:var(--marfil);padding:1rem 1.5rem}
+.nav-menu a{color:var(--marfil)}
 .nav-menu a.menu-active,.nav-menu a:hover{color:#434345}
 .nav-menu a.menu-active{background:var(--gris);cursor:default}
 .nav-menu a:hover{background:var(--amarillo)}
@@ -72,6 +72,12 @@ footer{background:#64110D;padding:1rem 0;margin:2rem 0 0}
 .orientaciones ul{padding:0 0 0 1rem;margin:1rem 0}
 .text-danger{font-size:1.5rem;line-height:0;vertical-align:middle}
 iframe{display:none}
+@media (max-width:23em){
+	.nav-menu a{padding:.75rem}
+}
+@media (min-width:23em){
+	.nav-menu a{padding:1rem 1.5rem}
+}
 @media (max-width:28em),(min-width:37.5em) and (max-width:50em){
 	.orientaciones .orienta-frase{display:none}
 }
