@@ -12,7 +12,7 @@ const email     = document.getElementById('email'),
  */
 function validarNoVacio(value, description) {
 	if (value === "") {
-		window.alert('Por favor ingrese ' + description + '.');
+		window.alert(`Por favor ingrese ${description}.`);
 		return false;
 	}
 
@@ -28,7 +28,7 @@ function validarNoVacio(value, description) {
 function validarLongitudMinima(value, minLength, description) {
 	if (value.length < minLength) {
 		description = description.charAt(0).toUpperCase() + description.slice(1);
-		window.alert(description + ' debe tener al menos ' + minLength + ' caracteres.');
+		window.alert(`${description} debe tener al menos ${minLength} caracteres.`);
 		return false;
 	}
 
