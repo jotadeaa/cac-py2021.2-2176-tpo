@@ -5,6 +5,7 @@ const orientaciones = {},
 	  orientIncumb  = document.getElementById('orientIncumb'),
 	  incumbWrappr  = document.getElementById('incumbWrappr'),
 	  incumbTitulo  = document.getElementById('incumbTitulo'),
+	  tituloSpan    = orientTitulo.querySelector('span'),
 	  animDuration  = 2000; // debe coincidir con la duración en CSS
 let timer = setInterval(() => {
 		incumbTitulo.classList.remove('animate__bounce');
@@ -39,16 +40,15 @@ function animarOrientacion(inOut) {
  * @param {{titulo:string, imagen:string, incumbencias:string}} orientData
  */
 function cambiarOrientacion(boton, orientData) {
-	orientTitulo.textContent = orientData.titulo;
-	orientImagen.src         = orientData.imagen;
-	orientImagen.alt         = boton.textContent;
-	orientIncumb.innerHTML   = orientData.incumbencias;
+	tituloSpan.textContent = orientData.titulo;
+	orientImagen.src       = orientData.imagen;
+	orientImagen.alt       = boton.textContent;
+	orientIncumb.innerHTML = orientData.incumbencias;
 	if (inicial) {
 		inicial = false;
 		orientTitulo.parentElement.removeAttribute('style');
 		orientIncumb.removeAttribute('style');
 		incumbWrappr.classList.remove('incumb-wrapper');
-		incumbTitulo.removeAttribute('class');
 		incumbTitulo.textContent = 'Incumbencias:';
 	}
 }
@@ -65,7 +65,8 @@ fetch('./orientaciones.json')
 
 			// Generar el HTML para las incumbencias.
 			orientData.incumbencias = orientData.incumbencias.reduce(
-				(html, incumbencia) => html + `<li>${incumbencia}</li>`, ''
+				(html, incumbencia) => html + `<li>${incumbencia}</li>`,
+				''
 			);
 		}
 	});
@@ -84,6 +85,7 @@ for (const boton of document.querySelectorAll('.botonera .boton')) {
 		}
 		else {
 			timer = undefined;
+			incumbTitulo.removeAttribute('class');
 		}
 
 		boton.classList.add('boton-active');
