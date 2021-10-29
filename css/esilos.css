@@ -43,7 +43,7 @@ footer{background:#64110D;padding:1rem 0;margin:2rem 0 0}
 .novedades{border:2px solid var(--novedad)}
 .novedades>.grid-container{display:grid;gap:0}
 .novedades>.grid-container>.grid-col{padding:1rem}
-.novedades .grid-hero{background:#FC6;grid-column:span 2}
+.novedades .grid-hero{background:#FC6}
 .novedades .grid-col:not(.grid-hero) h2{text-transform:uppercase}
 .novedades .grid-col img{width:100%}
 .novedades .grid-col h2,.novedades .grid-col p{margin:0}
@@ -83,7 +83,6 @@ iframe{display:none}
 	.header-banner{display:none}
 	.grid-container{grid-template-columns:1fr}
 	.novedades>.grid-container>.grid-col{grid-template-columns:100px auto}
-	.novedades .grid-col p{grid-column:span 2}
 	.novedades-header{flex-direction:column}
 	.novedades-header h1{align-self:start}
 	.novedades-header .update{align-self:end;margin-top:1em}
@@ -93,7 +92,7 @@ iframe{display:none}
 @media (min-width:37.5em){
 	.footer-menu ul li+li{border-top:1px dashed var(--rosado)}
 	.intro-top{grid-template-columns:1fr 1fr 1fr}
-	.novedades>.grid-container>.grid-col{grid-template:"image header" 1rem "image paragraph" auto / 140px auto}
+	.novedades .grid-col{grid-template:"image header" fit-content(1rem) "image paragraph" auto / 140px auto}
 	.novedades .grid-col img{grid-area:image}
 	.novedades .grid-col h2{grid-area:header}
 	.novedades .grid-col p{grid-area:paragraph}
@@ -103,18 +102,24 @@ iframe{display:none}
 	.orientaciones{grid-template-columns:minmax(auto,400px) minmax(50%,auto)}
 	.orientaciones img{min-width:40vw;max-width:400px}
 }
+@media (max-width:48em){
+	.novedades>.grid-container{grid-template-columns:1fr}
+	.novedades .grid-col:nth-child(odd):not(.grid-hero){background:var(--gris)}
+	.novedades .grid-col p{grid-column:span 2}
+}
+@media (min-width:48em){
+	.novedades .grid-hero{grid-column:span 2}
+	.novedades .grid-col:nth-child(4n),.novedades .grid-col:nth-child(4n-1){background:var(--gris)}
+}
 @media (max-width:61em){
 	fieldset{padding-inline:1rem}
 	footer .grid-container{padding-inline:1rem;grid-template-columns:1fr 1fr}
 	.spaced{margin-inline:1rem}
 	.novedades>.grid-container{padding-inline:0}
-	.novedades .grid-col:nth-child(odd):not(.grid-hero){background:var(--gris)}
 	.copy{margin-inline:1rem}
 }
 @media (min-width:61em){
 	footer .grid-container{grid-template-columns:repeat(4,1fr)}
-	.novedades .grid-container{grid-template-columns:1fr 1fr}
-	.novedades .grid-col:nth-child(4n),.novedades .grid-col:nth-child(4n-1){background:var(--gris)}
 	.botonera li{flex-basis:16%}
 	.orientaciones{grid-template-columns:400px auto}
 }
