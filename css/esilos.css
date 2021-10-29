@@ -69,6 +69,7 @@ footer{background:#64110D;padding:1rem 0}
 .orientaciones img{width:100%}
 .orientaciones ul{padding:0 0 0 1rem;margin:1rem 0}
 .text-danger{font-size:1.5rem;line-height:0;vertical-align:middle}
+iframe{display:none}
 @media (max-width:26em){
 	.orientaciones .orienta-frase{display:none}
 }
